@@ -16,7 +16,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 20px 50px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background: rgba(255,255,255,0.9);
 }
 
 nav h1 {
@@ -25,20 +25,24 @@ nav h1 {
 }
 
 nav ul {
+  list-style: none;
   display: flex;
   gap: 30px;
-  list-style: none;
 }
 
-nav li {
-  cursor: pointer;
+nav a {
+  text-decoration: none;
+  color: #3b2f2f;
   font-size: 16px;
+}
+
+nav a:hover {
+  text-decoration: underline;
 }
 
 /* HERO */
 .hero {
-  height: 90vh;
-  background-image: url("https://images.unsplash.com/photo-1520975916090-3105956dac38");
+  height: 80vh;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -47,67 +51,46 @@ nav li {
 }
 
 .hero-text {
-  background-color: rgba(255, 255, 255, 0.75);
+  background: rgba(255,255,255,0.8);
   padding: 40px;
-  max-width: 450px;
+  max-width: 500px;
   border-radius: 10px;
 }
 
-.hero-text h2 {
-  font-size: 32px;
-  margin-bottom: 15px;
-}
-
-.hero-text p {
-  font-size: 18px;
-  line-height: 1.5;
-}
-
-/* SEASONS */
-.seasons {
+/* SECTIONS */
+section {
   padding: 80px 50px;
   text-align: center;
 }
 
-.seasons h2 {
-  font-size: 32px;
-  margin-bottom: 40px;
-}
-
-.season-cards {
+.cards {
   display: flex;
   justify-content: center;
   gap: 30px;
+  flex-wrap: wrap;
 }
 
-.season {
-  background: linear-gradient(135deg, #e8d8b7, #f4efe6);
-  padding: 40px 30px;
-  width: 200px;
+.card {
+  width: 250px;
+  background: white;
   border-radius: 15px;
-  font-size: 20px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
-.season:hover {
-  transform: translateY(-10px);
+.card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
 }
 
-/* QUOTE */
-.quote {
-  background-color: #3b2f2f;
-  color: #f5e9d8;
-  padding: 70px 40px;
-  text-align: center;
-  font-size: 22px;
-  font-style: italic;
+.card h3 {
+  padding: 15px;
 }
 
-/* FOOTER */
 footer {
+  background: #eee4d8;
   text-align: center;
-  padding: 25px;
-  background-color: #eee4d8;
+  padding: 20px;
   font-size: 14px;
 }
