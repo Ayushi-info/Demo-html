@@ -1,61 +1,113 @@
-body {
+* {
   margin: 0;
-  height: 100vh;
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Playfair Display', serif;
+  background-color: #f8f4ef;
+  color: #3b2f2f;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+nav h1 {
+  font-size: 28px;
+  letter-spacing: 2px;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+nav li {
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* HERO */
+.hero {
+  height: 90vh;
+  background-image: url("https://images.unsplash.com/photo-1520975916090-3105956dac38");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding-left: 60px;
+}
+
+.hero-text {
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 40px;
+  max-width: 450px;
+  border-radius: 10px;
+}
+
+.hero-text h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* SEASONS */
+.seasons {
+  padding: 80px 50px;
+  text-align: center;
+}
+
+.seasons h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.season-cards {
   display: flex;
   justify-content: center;
-  align-items: center;
+  gap: 30px;
 }
 
-.card {
-  background: white;
-  width: 320px;
-  padding: 25px;
+.season {
+  background: linear-gradient(135deg, #e8d8b7, #f4efe6);
+  padding: 40px 30px;
+  width: 200px;
   border-radius: 15px;
-  text-align: center;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-}
-
-.card h2 {
-  margin-bottom: 5px;
-  color: #333;
-}
-
-.card p {
-  color: #777;
-  font-size: 14px;
-  margin-bottom: 20px;
-}
-
-.images {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-
-.images img {
-  width: 90px;
-  height: 90px;
-  object-fit: cover;
-  border-radius: 10px;
+  font-size: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
   transition: transform 0.3s;
 }
 
-.images img:hover {
-  transform: scale(1.1);
+.season:hover {
+  transform: translateY(-10px);
 }
 
-button {
-  padding: 10px 25px;
-  border: none;
-  border-radius: 25px;
-  background: linear-gradient(135deg, #667eea, #764ba2);
-  color: white;
-  cursor: pointer;
+/* QUOTE */
+.quote {
+  background-color: #3b2f2f;
+  color: #f5e9d8;
+  padding: 70px 40px;
+  text-align: center;
+  font-size: 22px;
+  font-style: italic;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 25px;
+  background-color: #eee4d8;
   font-size: 14px;
-}
-
-button:hover {
-  opacity: 0.9;
 }
